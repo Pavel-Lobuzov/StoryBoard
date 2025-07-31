@@ -16,20 +16,7 @@ class Registration: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-//        titleText.text = "Registration Form"
-//        titleText.textColor = .white
-//        titleText.font = UIFont.systemFont(ofSize: 40)
-//        titleText.textAlignment = .center
-//        self.view.addSubview(titleText)
-//        titleText.translatesAutoresizingMaskIntoConstraints = false
-//        
-//        NSLayoutConstraint.activate([
-//            titleText.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-////            titleText.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 30),
-//            
-//        ])
-            
-        
+        view.backgroundColor = .blue
         
     }
 

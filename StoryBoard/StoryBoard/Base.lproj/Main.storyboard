@@ -15,55 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="house.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OG8-60-NMN">
-                                <rect key="frame" x="107" y="105.33333333333331" width="178" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pe-vd-3qt">
-                                <rect key="frame" x="50" y="538" width="293" height="34.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="My home control"/>
-                                <connections>
-                                    <segue destination="eng-BM-Oyo" kind="show" id="yLq-YJ-Q3V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SX-fF-UtM">
-                                <rect key="frame" x="50" y="602.33333333333337" width="293" height="34.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Appartment control page"/>
-                                <connections>
-                                    <segue destination="fsL-f1-LbV" kind="show" id="xcP-Da-26h"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bia-zS-dhs">
-                                <rect key="frame" x="50" y="666.66666666666663" width="293" height="34.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Registration form"/>
-                                <connections>
-                                    <segue destination="CJG-7r-OCp" kind="show" id="gxk-4x-lbS"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                        <constraints>
-                            <constraint firstItem="Bia-zS-dhs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="1Ee-tu-2uF"/>
-                            <constraint firstItem="Bia-zS-dhs" firstAttribute="top" secondItem="0SX-fF-UtM" secondAttribute="bottom" constant="30" id="GaP-Lw-EKb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Pe-vd-3qt" secondAttribute="trailing" constant="50" id="GyW-m6-jsL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0SX-fF-UtM" secondAttribute="trailing" constant="50" id="S5B-pL-m3a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bia-zS-dhs" secondAttribute="trailing" constant="50" id="TFg-Wf-ds5"/>
-                            <constraint firstItem="0SX-fF-UtM" firstAttribute="top" secondItem="3Pe-vd-3qt" secondAttribute="bottom" constant="30" id="YR2-Ic-Bfk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bia-zS-dhs" secondAttribute="bottom" constant="83" id="bmn-d1-nfy"/>
-                            <constraint firstItem="3Pe-vd-3qt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="e1E-mW-uol"/>
-                            <constraint firstItem="0SX-fF-UtM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fBP-cV-6Mg"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="batton1" destination="3Pe-vd-3qt" id="t1v-AT-pUa"/>
-                        <outlet property="batton2" destination="0SX-fF-UtM" id="9S4-kp-ZK2"/>
-                        <outlet property="batton3" destination="Bia-zS-dhs" id="4aF-un-jR5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,7 +28,7 @@
             <objects>
                 <viewController id="fsL-f1-LbV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dpL-bn-T1s">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="e046cc1e964cc3b74ae71d68362fa8e0" translatesAutoresizingMaskIntoConstraints="NO" id="efS-iN-ERf" customClass="Appartment">
@@ -171,7 +125,7 @@
             <objects>
                 <viewController id="CJG-7r-OCp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6mQ-e3-hbw">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b85c1b1aa1612295c28e4a6272dbf211" translatesAutoresizingMaskIntoConstraints="NO" id="pJQ-ZH-hvU" customClass="Registration">
@@ -248,7 +202,7 @@
             <objects>
                 <viewController id="eng-BM-Oyo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fW1-B5-Vkg">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="92a5397df121113b2c983de5faed388d" translatesAutoresizingMaskIntoConstraints="NO" id="xzz-mp-zS9" customClass="MyHomePage">
@@ -327,7 +281,7 @@
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
