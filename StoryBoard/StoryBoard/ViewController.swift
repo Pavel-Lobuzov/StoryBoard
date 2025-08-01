@@ -10,25 +10,22 @@ class ViewController: UIViewController {
         view.backgroundColor = .yellow
         let setButton = [button1, button2, button3]
         
-        button1.setTitle( "MY Home Control", for: .normal)
+        button1.setTitle( "My Home Control", for: .normal)
         button1.tintColor = .black
-        button2.setTitle( "Appatrment control page", for: .normal)
+        button2.setTitle( "Registration form", for: .normal)
         button2.tintColor = .black
-        button3.setTitle("Registration form", for: .normal)
+        button3.setTitle("Appatrment control page", for: .normal)
         
-    
-     
         for setButton in setButton {
             setButton.backgroundColor = .gray
             setButton.setTitleColor(.yellow, for: .normal)
             setButton.layer.cornerRadius = 10
             setButton.layer.shadowColor = UIColor.black.cgColor
+            setButton.layer.shadowRadius = 10
             setButton.layer.shadowOpacity = 1.5
             setButton.layer.shadowOffset = CGSize(width: 5, height: 5)
         }
-        
        
-        
         button1.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         button2.addTarget(self, action: #selector(buttonTapped2), for: .touchUpInside)
         button3.addTarget(self, action: #selector(buttonTapped3), for: .touchUpInside)
@@ -45,8 +42,11 @@ class ViewController: UIViewController {
             button2.centerXAnchor.constraint(equalTo: button1.centerXAnchor),
             button3.topAnchor.constraint(equalTo: button2.bottomAnchor, constant: 30),
             button3.centerXAnchor.constraint(equalTo: button2.centerXAnchor),
-            
+            button1.widthAnchor.constraint(equalToConstant: 300),
+            button2.widthAnchor.constraint(equalToConstant: 300),
+            button3.widthAnchor.constraint(equalToConstant: 300),
         ])
+        
     }
     @objc func buttonTapped() {
         let button = MyHomePage()
